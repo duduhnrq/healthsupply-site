@@ -181,7 +181,7 @@ div.text1 a:hover {
 
 .imagem {
     width: 400px;
-    height: 600px; 
+    height: 500px; 
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -191,10 +191,6 @@ div.text1 a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.text2 img {
-    width: 150px;
 }
 
 .text2 h1 {
@@ -212,8 +208,53 @@ div.text1 a:hover {
 }
 
 .text2 p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 30px;
+}
+
+.text2 img {
+    padding-top: 20px;
+    width: 150px;
+}
+
+#solucao3 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--color001);
+    color: white;
+}
+
+#solucao3 h1 {
+    padding-top: 30px;
+    width: 400px;
+}
+
+.info001 img {
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+.info001 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info001 div {
+    max-width: 250px;
+    padding: 30px;
+}
+
+.info001 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.info001 p {
+    font-size: 15px;
+    line-height: 25px;
 }
 
 footer {
@@ -280,10 +321,6 @@ footer a:hover {
         font-size: 15px;
     }
 
-    div.text1 a {
-        font-size: 10px;
-    }
-
     #solucao h1 {
         font-size: 1em;
     }
@@ -297,6 +334,32 @@ footer a:hover {
     }
 
     #solucao2 {
-        display: inline-block;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    .imagem {
+        margin: 0 auto;
+        width: 500px;
+        height: 300px;
+    }
+
+    .text2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text2 hr {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .text2 h1 {
+        padding-top: 30px;
+    }
+
+    .text2 p {
+        font-size: 16px;
     }
 }
