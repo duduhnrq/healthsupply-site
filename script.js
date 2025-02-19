@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menu = document.getElementById("menu");
 
   function checkScreenSize() {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 1000) {
       menu.classList.remove("active");
       menu.style.display = "flex"; 
       menu.style.opacity = "1";

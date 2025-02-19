@@ -12,6 +12,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -86,6 +87,135 @@ section {
     scroll-margin-top: 135px;
 }
 
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url(imagens/imagem001.jpg) no-repeat center center;
+    background-position: cover;
+    background-attachment: fixed;
+    min-height: 550px;
+    width: 100vw;
+}
+
+div.text1 {
+    text-align: center;
+    min-width: 450px;
+    max-width: 50vw;
+    color: white;
+}
+
+div.text1 h1 {
+    font-size: 2.5em;
+    padding: 30px;
+}
+
+div.text1 p {
+    font-size: 20px;
+    padding-bottom: 45px;
+    line-height: 35px;
+}
+
+div.text1 a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color001);
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+div.text1 a:hover {
+    background-color: white;
+    color: var(--color001);
+}
+
+#solucao {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    color: var(--color001);
+    line-height: 30px;
+    background-color: var(--color001);
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#solucao div {
+    flex: 1;
+    max-width: 500px;
+    margin: 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.082);
+}
+
+#solucao h1 {
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+#solucao hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color001);
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#solucao2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+#solucao2 div {
+    max-width: 600px;
+}
+
+.imagem {
+    width: 400px;
+    height: 600px; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text2 img {
+    width: 150px;
+}
+
+.text2 h1 {
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.text2 hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color001);
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.text2 p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
 footer {
     background-color: #ccc;
     text-align: center;
@@ -102,7 +232,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+/*RESPOSIVIDADE*/
+
+@media (max-width: 1000px) {
     .menu-toggle {
         display: block;
         padding-right: 30px;
@@ -112,9 +244,10 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         position: absolute;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.100);
         top: 80px;
         right: 20px;
-        background: #3fb3a58a;
+        background: white;
         width: 200px;
         padding: 10px;
         border-radius: 5px;
@@ -123,9 +256,13 @@ footer a:hover {
         visibility: hidden;
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
     }
+
+    .menu-toggle:hover {
+        color: #2e8178;
+    }
     
     .menu a {
-        color: white;
+        color: var(--color001);
     }
     
     .menu.active {
@@ -133,5 +270,33 @@ footer a:hover {
         opacity: 1;
         transform: translateY(0);
         visibility: visible;
+    }
+
+    div.text1 h1{
+        font-size: 2em;
+    }
+
+    div.text1 p {
+        font-size: 15px;
+    }
+
+    div.text1 a {
+        font-size: 10px;
+    }
+
+    #solucao h1 {
+        font-size: 1em;
+    }
+
+    #solucao p {
+        font-size: 15px;
+    }
+
+    #solucao {
+        gap: 15px;
+    }
+
+    #solucao2 {
+        display: inline-block;
     }
 }
