@@ -219,6 +219,7 @@ div.text1 a:hover {
 
 #solucao3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     padding: 30px;
@@ -227,8 +228,26 @@ div.text1 a:hover {
 }
 
 #solucao3 h1 {
-    padding-top: 30px;
-    width: 400px;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 30px;
+    text-align: center;
+}
+
+#solucao3 hr {
+    margin: auto;
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.info001 {
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .info001 img {
@@ -236,13 +255,8 @@ div.text1 a:hover {
     padding-bottom: 15px;
 }
 
-.info001 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .info001 div {
-    max-width: 250px;
+    max-width: 300px;
     padding: 30px;
 }
 
@@ -255,6 +269,25 @@ div.text1 a:hover {
 .info001 p {
     font-size: 15px;
     line-height: 25px;
+}
+
+#tecnologia {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.imagem-lado {
+    flex: 1;
+    background: url('imagens/ti1.jpg') no-repeat center center/cover;
+}
+
+.tecnologia {
+    flex: 1;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 
 footer {
@@ -314,7 +347,7 @@ footer a:hover {
     }
 
     div.text1 h1{
-        font-size: 2em;
+        font-size: 2.1em;
     }
 
     div.text1 p {
@@ -322,11 +355,12 @@ footer a:hover {
     }
 
     #solucao h1 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #solucao p {
         font-size: 15px;
+        line-height: 20px;
     }
 
     #solucao {
@@ -361,5 +395,21 @@ footer a:hover {
 
     .text2 p {
         font-size: 16px;
+    }
+
+    .info001 {
+        text-align: center;
+        margin: 0 auto;
+        width: 500px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #solucao3 .titulo h1 {
+        font-size: 2em;
+    }
+
+    .info001 p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
