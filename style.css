@@ -148,7 +148,7 @@ div.text1 a:hover {
     padding: 50px;
     margin: 0;
     height: auto;
-    color: var(--color001);
+    color: black;
     line-height: 30px;
     background-color: var(--color001);
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);
@@ -168,7 +168,7 @@ div.text1 a:hover {
 
 #solucao h1 {
     padding-bottom: 10px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #solucao hr {
@@ -234,7 +234,7 @@ div.text1 a:hover {
     justify-content: center;
     margin: 0 auto;
     padding: 30px;
-    background-color: var(--color001);
+    background-color: var(--color001    );
     color: white;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);    
 }
@@ -652,6 +652,6 @@ footer a:hover {
 
     .input-group input,
     .input-group textarea {
-        width: 300px;
+        width: 250px;
     }
 }
