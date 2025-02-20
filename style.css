@@ -28,6 +28,16 @@ html , body {
     overflow-x: hidden;
 }
 
+.external {
+    text-decoration: none;
+    color: var(--color001);
+    font-weight: 600;
+}
+
+.external:hover {
+    text-decoration: underline;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -141,6 +151,7 @@ div.text1 a:hover {
     color: var(--color001);
     line-height: 30px;
     background-color: var(--color001);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
@@ -157,7 +168,7 @@ div.text1 a:hover {
 
 #solucao h1 {
     padding-bottom: 10px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #solucao hr {
@@ -195,8 +206,8 @@ div.text1 a:hover {
 
 .text2 h1 {
     font-size: 2em;
-    font-weight: 500;
-    padding-bottom: 10px;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 
 .text2 hr {
@@ -225,12 +236,13 @@ div.text1 a:hover {
     padding: 30px;
     background-color: var(--color001);
     color: white;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);    
 }
 
 #solucao3 h1 {
     font-size: 2.5em;
     font-weight: 600;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -244,10 +256,12 @@ div.text1 a:hover {
 }
 
 .info001 {
+    gap: 30px;
+    text-align: center;
     display: grid;
-    width: 900px;
+    width: 80vw;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .info001 img {
@@ -256,7 +270,7 @@ div.text1 a:hover {
 }
 
 .info001 div {
-    max-width: 300px;
+    max-width: 500px;
     padding: 30px;
 }
 
@@ -267,27 +281,197 @@ div.text1 a:hover {
 }
 
 .info001 p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 25px;
 }
 
 #tecnologia {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .imagem-lado {
     flex: 1;
-    background: url('imagens/ti1.jpg') no-repeat center center/cover;
+    background: url('imagens/tecnologia.jpg') no-repeat center right/cover;
 }
 
 .tecnologia {
     flex: 1;
+    width: 50%;
     background-color: white;
     align-items: center;
     justify-content: center;
     padding: 30px;
+}
+
+.tecnologia h1 {
+    font-size: 2.1em;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.tecnologia hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color001);
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.tecnologia p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.tecnologia h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 30px 0px 30px 0px;
+}
+
+.tecnologia ul {
+    list-style-position: inside;
+    list-style: none;
+    padding: 0;
+}
+
+.tecnologia li {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.tecnologia li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green; 
+    font-size: 18px;
+}
+
+#funcionalidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);
+}
+
+.titulo2 h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.titulo2 hr {
+    margin: auto;
+    border: none;
+    height: 1px;
+    background-color: var(--color001);
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.info002 {
+    width: 80%;
+    text-align: center;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info002 div {
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.info002 img {
+    width: 100%;
+    max-width: 360px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.item2 h1{
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.item2 p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(221, 221, 221);   
+    gap: 15vw;
+}
+
+#contacto .input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contacto form h2 {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#contacto button {
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color003);
+    padding: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#contacto button:hover {
+    transform: scale(1.05);
+}
+
+#contacto .contacto2 h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#contacto .contacto2 p {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#mensagem {
+    font-family: var(--font001);
+    font-size: 16px;
 }
 
 footer {
@@ -400,16 +584,74 @@ footer a:hover {
     .info001 {
         text-align: center;
         margin: 0 auto;
-        width: 500px;
+        max-width: 800px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info001 div {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .info001 p {
+        font-size: 12px;
+        line-height: 20px;
     }
 
     #solucao3 .titulo h1 {
         font-size: 2em;
     }
 
-    .info001 p {
-        font-size: 14px;
-        line-height: 20px;
+    #tecnologia {
+        display: block;
+        height: auto;
+    }
+
+    .imagem-lado {
+        width: 100vw;
+        height: 400px;
+    }
+
+    .tecnologia {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .tecnologia h1 {
+        font-size: 2em;
+    }
+
+    .tecnologia hr {
+        margin: 0 auto;
+    }
+
+    .tecnologia p {
+        font-size: 16px;
+        padding-top: 30px;
+    }
+
+    .tecnologia h2 {
+        font-size: 1.4em;
+    }
+
+    .tecnologia li {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .info002 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 300px;
     }
 }
