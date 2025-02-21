@@ -534,11 +534,11 @@ footer a:hover {
         visibility: visible;
     }
 
-    div.text1 h1{
-        font-size: 2.1em;
+    .text1 h1{
+        font-size: 3em;
     }
 
-    div.text1 p {
+    .text1 p {
         font-size: 15px;
     }
 
