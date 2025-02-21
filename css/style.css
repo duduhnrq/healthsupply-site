@@ -104,29 +104,29 @@ section {
     background: #fff url(../imagens/imagem001.jpg) no-repeat center center;
     background-position: cover;
     background-attachment: fixed;
-    min-height: 550px;
+    height: calc(100vh - 135px);
     width: 100vw;
 }
 
-div.text1 {
+.text1 {
     text-align: center;
     min-width: 450px;
     max-width: 50vw;
     color: white;
 }
 
-div.text1 h1 {
-    font-size: 2.5em;
+.text1 h1 {
+    font-size: 4em;
     padding: 30px;
 }
 
-div.text1 p {
+.text1 p {
     font-size: 20px;
     padding-bottom: 45px;
     line-height: 35px;
 }
 
-div.text1 a {
+.text1 a {
     text-decoration: none;
     color: white;
     background-color: var(--color001);
@@ -136,7 +136,7 @@ div.text1 a {
     transition: all .3s ease-in-out;
 }
 
-div.text1 a:hover {
+.text1 a:hover {
     background-color: white;
     color: var(--color001);
 }
