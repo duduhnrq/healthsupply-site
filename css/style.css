@@ -101,7 +101,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff url(imagens/imagem001.jpg) no-repeat center center;
+    background: #fff url(../imagens/imagem001.jpg) no-repeat center center;
     background-position: cover;
     background-attachment: fixed;
     min-height: 550px;
@@ -293,7 +293,7 @@ div.text1 a:hover {
 
 .imagem-lado {
     flex: 1;
-    background: url('imagens/tecnologia.jpg') no-repeat center right/cover;
+    background: url('../imagens/tecnologia.jpg') no-repeat center right/cover;
 }
 
 .tecnologia {
