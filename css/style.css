@@ -355,7 +355,6 @@ div.text1 a:hover {
 #funcionalidades {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0 auto;
     padding: 30px;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.205);
@@ -386,8 +385,7 @@ div.text1 a:hover {
 }
 
 .info002 div {
-    width: 360px;
-    margin: 0 auto;
+    margin: 30px;
     padding-bottom: 40px;
 }
 
@@ -491,6 +489,12 @@ footer a:hover {
 }
 
 /*RESPOSIVIDADE*/
+
+@media (max-width: 1300px) {
+    .info002 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 1000px) {
     .menu-toggle {
