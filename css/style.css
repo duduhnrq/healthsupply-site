@@ -186,7 +186,7 @@ section {
     padding: 40px;
 }
 
-#solucao2 div {
+#solucao2 .text2 {
     max-width: 600px;
 }
 
@@ -491,11 +491,15 @@ footer a:hover {
 /*RESPOSIVIDADE*/
 
 @media (max-width: 1300px) {
+    .info001 {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
     .info002 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+    
 @media (max-width: 1000px) {
     .menu-toggle {
         display: block;
@@ -535,11 +539,11 @@ footer a:hover {
     }
 
     .text1 h1{
-        font-size: 3em;
+        font-size: 2.4em;
     }
 
     .text1 p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #solucao h1 {
@@ -584,78 +588,86 @@ footer a:hover {
     .text2 p {
         font-size: 16px;
     }
-
-    .info001 {
-        text-align: center;
-        margin: 0 auto;
-        max-width: 800px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    
     .info001 div {
         max-width: 400px;
         margin: 0 auto;
     }
-
+    
     .info001 p {
         font-size: 12px;
         line-height: 20px;
     }
-
+    
     #solucao3 .titulo h1 {
         font-size: 2em;
     }
-
+    
     #tecnologia {
         display: block;
         height: auto;
     }
-
+    
     .imagem-lado {
         width: 100vw;
         height: 400px;
     }
-
+    
     .tecnologia {
         text-align: center;
         margin: 0 auto;
         width: 90%;
     }
-
+    
     .tecnologia h1 {
         font-size: 2em;
     }
-
+    
     .tecnologia hr {
         margin: 0 auto;
     }
-
+    
     .tecnologia p {
         font-size: 16px;
         padding-top: 30px;
     }
-
+    
     .tecnologia h2 {
         font-size: 1.4em;
     }
-
+    
     .tecnologia li {
         font-size: 16px;
         text-align: left;
     }
-
+    
     .info002 {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    #contacto {
-        display: flex;
-        flex-direction: column;
-        gap: 4vh;
-    }
-
+    
     .input-group input,
     .input-group textarea {
         width: 250px;
     }
+}
+
+@media (max-width: 768px) {
+    .imagem {
+        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+    }
+    
+    .info001 {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+    }  
 }
