@@ -651,6 +651,7 @@ footer a:hover {
     .info002 {
         grid-template-columns: repeat(1, 1fr);
     }
+
     
     .input-group input,
     .input-group textarea {
@@ -658,8 +659,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 768px) {   
     .text1 h1 {
         font-size: 1.5em;
     }
@@ -667,11 +667,6 @@ footer a:hover {
     .text1 p {
         font-size: 13px;
         line-height: 25px;
-    }
-
-    #solucao {
-        display: g;
-        grid-template-columns: repeat(1, 1fr);
     }
     
     .imagem {
@@ -686,10 +681,26 @@ footer a:hover {
         max-width: 800px;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .info002 {
+        width: 90%;
+    }
+
+    .info002 img {
+        width: 300px;
+        height: 180px;
+    }
     
     #contacto {
         display: flex;
         flex-direction: column;
         gap: 4vh;
     }  
+}
+
+@media (max-width: 600px) {
+    #solucao {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
