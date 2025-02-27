@@ -95,7 +95,7 @@ main {
 }
 
 section {
-    scroll-margin-top: 135px;
+    scroll-margin-top: 90px;
 }
 
 #home {
@@ -111,13 +111,13 @@ section {
 
 .text1 {
     text-align: center;
-    width: 600px;
+    width: 65%;
     min-width: 360px;
     color: white;
 }
 
 .text1 h1 {
-    font-size: 3em;
+    font-size: 4em;
     padding: 30px;
 }
 
@@ -282,6 +282,7 @@ section {
 }
 
 .info001 p {
+    text-align: justify;
     font-size: 13px;
     line-height: 25px;
 }
@@ -540,11 +541,11 @@ footer a:hover {
     }
 
     .text1 {
-        width: 60vw;
+        width: 65%;
     }
 
     .text1 h1{
-        font-size: 1.8em;
+        font-size: 3em;
     }
 
     .text1 p {
@@ -660,8 +661,12 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {   
+    .text1 {
+        width: 80%;
+    }
+    
     .text1 h1 {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .text1 p {
