@@ -477,17 +477,11 @@ section {
 footer {
     background-color: #ccc;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
-footer a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-footer a:hover {
-    text-decoration: underline;
+footer p {
+    font-size: 15px;
 }
 
 /*RESPOSIVIDADE*/
