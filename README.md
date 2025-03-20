@@ -68,6 +68,16 @@ Fique à vontade para contribuir com melhorias no projeto! Para isso:
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+## ☎️ Contato
+
+Caso queira entrar em contato, me encontre em:
+
+- **Email**: eduardohnrque@gmail.com
+
+- **LinkedIn**: [Eduardo Henrique](www.linkedin.com/in/eduardo-hnrque)
+
+- **GitHub**: [duduhnrq](https://github.com/duduhnrq)
+
 ---
 
 💻 Desenvolvido por [Eduardo Henrique](https://github.com/duduhnrq)
