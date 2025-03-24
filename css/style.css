@@ -121,28 +121,44 @@ section {
 .text1 h1 {
     font-size: 4em;
     padding: 30px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .5s ease-in-out;
 }
 
 .text1 p {
     font-size: 20px;
     padding-bottom: 45px;
     line-height: 35px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .5s ease-in-out .3s;
 }
 
 .text1 a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     background-color: var(--color001);
     padding: 15px 30px;
     font-size: 15px;
     font-weight: 500;
-    transition: all .3s ease-in-out;
     border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity .5s ease-in-out .6s, transform .5s ease-in-out .6s;
 }
 
 .text1 a:hover {
-    background-color: white;
-    color: var(--color001);
+    transition: all .3s ease-in-out;
+    background-color: #2e8178;
+}
+
+.text1.visible h1,
+.text1.visible p,
+.text1.visible a {
+    opacity: 1;
+    transform: translateY(0);        
 }
 
 #solucao {

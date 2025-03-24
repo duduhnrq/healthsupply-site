@@ -40,3 +40,10 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+document.addEventListener('DOMContentLoaded', function () {
+  const homeText = document.querySelector('.text1')
+  setTimeout(() => {
+    homeText.classList.add('visible')
+  }, 100);
+})
